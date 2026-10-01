@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="metaCAMPUS">
+  <rect width="32" height="32" rx="6" fill="#101814"/>
+  <circle cx="16" cy="16" r="13.25" fill="#1a2620" stroke="#c9a227" stroke-width="2"/>
+  <g fill="#f4f0e6">
+    <rect x="6" y="14" width="2" height="11"/>
+    <rect x="11" y="14" width="2" height="11"/>
+    <rect x="16" y="14" width="2" height="11"/>
+    <rect x="6" y="12" width="2" height="3"/>
+    <rect x="7" y="10" width="2" height="3"/>
+    <rect x="8" y="9" width="3" height="3"/>
+    <rect x="10" y="10" width="2" height="3"/>
+    <rect x="11" y="12" width="2" height="3"/>
+    <rect x="12" y="10" width="2" height="3"/>
+    <rect x="13" y="9" width="3" height="3"/>
+    <rect x="15" y="10" width="2" height="3"/>
+    <rect x="16" y="12" width="2" height="3"/>
+  </g>
+  <g fill="#c9a227">
+    <rect x="19" y="9" width="8" height="2"/>
+    <rect x="19" y="23" width="8" height="2"/>
+    <rect x="19" y="9" width="2" height="16"/>
+    <rect x="25" y="9" width="2" height="4"/>
+    <rect x="25" y="21" width="2" height="4"/>
+  </g>
+</svg>
