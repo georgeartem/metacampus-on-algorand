@@ -1,0 +1,11 @@
+export const ORG = "https://github.com/metacampus-org";
+export const PROTOTYPE = "https://github.com/metacampus-org/easy-a-hackathon";
+export const DAO = "https://github.com/metacampus-org/metacampus-dao";
+export const DEMO = "https://github.com/metacampus-org/demo-repository";
+export const SITE = "https://www.metacampus.org";
+export const BLOG = "https://metacampusblog.wordpress.com";
+export const MAIL = "mailto:info@metacampus.org";
+export const INDEXER = "https://testnet-idx.algonode.cloud";
+export const X402 = "https://github.com/metacampus-org/metacampus-x402-verify";
+export const X402_HOST = "https://metacampus-x402-verify.vercel.app";
+export const X402_CHALLENGE = "https://algorand.co/global-x402-challenge";
