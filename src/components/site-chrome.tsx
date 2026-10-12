@@ -5,6 +5,7 @@ import { BLOG, MAIL, ORG, SITE } from "@/lib/links";
 
 const pages = [
   { to: "/", label: "Home" },
+  { to: "/ac", label: "x402" },
   { to: "/hash", label: "Hash" },
   { to: "/badges", label: "Badges" },
   { to: "/outcomes", label: "Outcomes" },
@@ -13,7 +14,6 @@ const pages = [
   { to: "/stack", label: "Stack" },
   { to: "/story", label: "Story" },
   { to: "/mooa", label: "MOOA" },
-  { to: "/ac", label: "AC" },
 ] as const;
 
 const linkClass = "inline-flex min-h-11 items-center text-muted hover:text-paper";
@@ -27,7 +27,11 @@ function NavLinks({ stacked = false }: { stacked?: boolean }) {
           to={page.to}
           className={stacked ? `${linkClass} justify-between` : linkClass}
           activeOptions={{ exact: true }}
-          activeProps={{ className: stacked ? "inline-flex min-h-11 items-center justify-between text-paper" : "inline-flex min-h-11 items-center text-paper" }}
+          activeProps={{
+            className: stacked
+              ? "inline-flex min-h-11 items-center justify-between text-paper"
+              : "inline-flex min-h-11 items-center text-paper",
+          }}
         >
           {page.label}
         </Link>
@@ -41,7 +45,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
     <div className="min-h-screen bg-ink text-paper">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-brass focus:px-4 focus:py-2 focus:text-ink"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-brass focus:px-4 focus:py-2 focus:text-white"
       >
         Skip to content
       </a>
@@ -49,11 +53,8 @@ export function SiteFrame({ children }: { children: ReactNode }) {
         <div className="mx-auto max-w-6xl px-5">
           <div className="flex items-center justify-between gap-4 py-3">
             <Link to="/" className="flex items-center gap-3">
-              <span
-                aria-hidden="true"
-                className="grid size-9 shrink-0 place-items-center rounded-md border border-brass font-display text-lg leading-none text-brass"
-              >
-                mC
+              <span aria-hidden="true" className="brand-mark">
+                m
               </span>
               <span className="font-display text-xl tracking-tight">metaCAMPUS</span>
             </Link>
@@ -148,7 +149,7 @@ export function Steps({ items }: { items: { title: string; body: string }[] }) {
           {index < items.length - 1 ? (
             <span aria-hidden="true" className="absolute top-8 left-4 h-[calc(100%-1rem)] w-px bg-line" />
           ) : null}
-          <span className="relative z-10 grid size-8 place-items-center rounded-full border border-brass bg-ink font-display text-brass">
+          <span className="relative z-10 grid size-8 place-items-center rounded-full border border-brass bg-panel font-display text-brass">
             {index + 1}
           </span>
           <div>
