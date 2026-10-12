@@ -53,9 +53,13 @@ export function SiteFrame({ children }: { children: ReactNode }) {
         <div className="mx-auto max-w-6xl px-5">
           <div className="flex items-center justify-between gap-4 py-3">
             <Link to="/" className="flex items-center gap-3">
-              <span aria-hidden="true" className="brand-mark">
-                m
-              </span>
+              <img
+                src="/mc-logo.svg"
+                alt="metaCAMPUS"
+                width={36}
+                height={36}
+                className="size-9 shrink-0 rounded-full border border-line object-cover"
+              />
               <span className="font-display text-xl tracking-tight">metaCAMPUS</span>
             </Link>
             <a className="btn btn-brass text-sm" href={ORG} target="_blank" rel="noreferrer">
